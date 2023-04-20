@@ -1,4 +1,4 @@
-FROM redmine:latest
+FROM redmine:5.0.0
 
 # 必要なパッケージのインストール
 RUN apt-get update && apt-get install -y \
