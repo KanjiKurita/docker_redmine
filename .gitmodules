@@ -10,3 +10,12 @@
 [submodule "themes/gitmike"]
 	path = themes/gitmike
 	url = https://github.com/makotokw/redmine-theme-gitmike.git
+[submodule "plugins/redmine_searchable_selectbox"]
+	path = plugins/redmine_searchable_selectbox
+	url = https://github.com/farend/redmine_searchable_selectbox.git
+[submodule "plugins/redmine_issue_templates"]
+	path = plugins/redmine_issue_templates
+	url = https://github.com/akiko-pusu/redmine_issue_templates.git
+[submodule "plugins/view_customize"]
+	path = plugins/view_customize
+	url = https://github.com/onozaty/redmine-view-customize.git

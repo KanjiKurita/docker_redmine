@@ -9,7 +9,7 @@ COPY ./plugins /usr/src/redmine/plugins
 COPY ./themes /usr/src/redmine/public/themes
 
 RUN cd /usr/src/redmine/plugins && \
-  bundle install --without development test
+    bundle install --without development test
 
 # タイムゾーンの設定
 ENV TZ=Asia/Tokyo
