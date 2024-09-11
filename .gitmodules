@@ -4,3 +4,6 @@
 [submodule "plugins/redmine_drawio"]
 	path = plugins/redmine_drawio
 	url = https://github.com/mikitex70/redmine_drawio.git
+[submodule "plugins/redmine_issue_dynamic_edit"]
+	path = plugins/redmine_issue_dynamic_edit
+	url = https://github.com/Ilogeek/redmine_issue_dynamic_edit.git
