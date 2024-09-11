@@ -7,3 +7,6 @@
 [submodule "plugins/redmine_issue_dynamic_edit"]
 	path = plugins/redmine_issue_dynamic_edit
 	url = https://github.com/Ilogeek/redmine_issue_dynamic_edit.git
+[submodule "themes/gitmike"]
+	path = themes/gitmike
+	url = https://github.com/makotokw/redmine-theme-gitmike.git

@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
   git
 
 COPY ./plugins /usr/src/redmine/plugins
+COPY ./themes /usr/src/redmine/public/themes
 
 RUN cd /usr/src/redmine/plugins && \
   bundle install --without development test

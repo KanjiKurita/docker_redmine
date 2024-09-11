@@ -12,6 +12,7 @@ services:
       REDMINE_DB_DATABASE: ${MYSQL_DATABASE}
     volumes:
       - ./plugins:/usr/src/redmine/plugins
+      - ./themes:/usr/src/redmine/public/themes
     depends_on:
       mysql:
         condition: service_healthy
