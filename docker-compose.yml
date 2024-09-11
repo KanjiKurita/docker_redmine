@@ -10,6 +10,8 @@ services:
       REDMINE_DB_USERNAME: ${MYSQL_USER}
       REDMINE_DB_PASSWORD: ${MYSQL_PASSWORD}
       REDMINE_DB_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - ./plugins:/usr/src/redmine/plugins
     depends_on:
       mysql:
         condition: service_healthy
@@ -22,7 +24,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     volumes:
-      - mysqldata:/var/lib/mysql
+      - ./mysqldata:/var/lib/mysql
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "${MYSQL_USER}", "-p${MYSQL_PASSWORD}"]
       interval: 10s

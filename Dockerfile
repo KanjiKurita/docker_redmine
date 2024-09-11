@@ -1,9 +1,14 @@
-FROM redmine:5.0.0
+FROM redmine:5.1.3
 
 # 必要なパッケージのインストール
 RUN apt-get update && apt-get install -y \
   vim \
   git
+
+COPY ./plugins /usr/src/redmine/plugins
+
+RUN cd /usr/src/redmine/plugins && \
+  bundle install --without development test
 
 # タイムゾーンの設定
 ENV TZ=Asia/Tokyo
