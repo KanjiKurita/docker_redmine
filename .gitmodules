@@ -22,3 +22,6 @@
 [submodule "plugins/redmine_dashboard"]
 	path = plugins/redmine_dashboard
 	url = https://github.com/jgraichen/redmine_dashboard.git
+[submodule "plugins/redmine_work_time"]
+	path = plugins/redmine_work_time
+	url = https://github.com/tkusukawa/redmine_work_time.git
