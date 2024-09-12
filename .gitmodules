@@ -25,3 +25,6 @@
 [submodule "plugins/redmine_work_time"]
 	path = plugins/redmine_work_time
 	url = https://github.com/tkusukawa/redmine_work_time.git
+[submodule "plugins/redmine_monitoring_controlling"]
+	path = plugins/redmine_monitoring_controlling
+	url = https://github.com/alexmonteiro/Redmine-Monitoring-Controlling.git
