@@ -19,3 +19,6 @@
 [submodule "plugins/redmine_absolute_dates"]
 	path = plugins/redmine_absolute_dates
 	url = https://github.com/suer/redmine_absolute_dates.git
+[submodule "plugins/redmine_dashboard"]
+	path = plugins/redmine_dashboard
+	url = https://github.com/jgraichen/redmine_dashboard.git
