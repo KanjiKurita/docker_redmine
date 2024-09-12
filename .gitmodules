@@ -28,3 +28,6 @@
 [submodule "plugins/redmine_monitoring_controlling"]
 	path = plugins/redmine_monitoring_controlling
 	url = https://github.com/alexmonteiro/Redmine-Monitoring-Controlling.git
+[submodule "plugins/redmine_wiki_extensions"]
+	path = plugins/redmine_wiki_extensions
+	url = https://github.com/haru/redmine_wiki_extensions.git
