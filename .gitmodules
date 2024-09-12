@@ -16,3 +16,6 @@
 [submodule "plugins/view_customize"]
 	path = plugins/view_customize
 	url = https://github.com/onozaty/redmine-view-customize.git
+[submodule "plugins/redmine_absolute_dates"]
+	path = plugins/redmine_absolute_dates
+	url = https://github.com/suer/redmine_absolute_dates.git
