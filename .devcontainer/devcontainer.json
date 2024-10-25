@@ -1,0 +1,48 @@
+{
+    "name": "redmine",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "redmine",
+    "workspaceFolder": "/usr/src/redmine",
+    "shutdownAction": "stopCompose",
+    "remoteUser": "root",
+    "remoteEnv": {
+        "BUNDLE_APP_CONFIG": null
+    },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "Shopify.ruby-lsp",
+                "KoichiSasada.vscode-rdbg",
+                "eamodio.gitlens",
+                "kaiwood.endwise",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg",
+                "ms-vsliveshare.vsliveshare"
+            ],
+            "settings": {
+                "[ruby]": {
+                    "editor.formatOnSave": false
+                },
+                "rubyLsp.rubyVersionManager": "none",
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "workbench.colorCustomizations": {
+                    "activityBar.background": "#ab3e3e"
+                },
+                "sqltools.connections": [
+                    {
+                        "previewLimit": 50,
+                        "server": "mysql",
+                        "port": 5432,
+                        "driver": "mysql",
+                        "name": "mysql",
+                        "database": "redmine_mysql_db",
+                        "username": "user",
+                        "password": "password"
+                    }
+                ]
+            }
+        }
+    }
+}
